@@ -3,6 +3,7 @@ package com.prueba.fullstackbackend.controller;
 import com.prueba.fullstackbackend.model.User;
 import com.prueba.fullstackbackend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +12,7 @@ import java.util.List;
 
 
 @RestController //  s
+@CrossOrigin("http://localhost:3000/") // se conecta react con axios
 public class UserController {
 	
 	@Autowired
